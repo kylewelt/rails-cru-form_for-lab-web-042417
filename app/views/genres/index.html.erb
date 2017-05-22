@@ -1,0 +1,7 @@
+<h1>Genres</h1>
+<p><%= link_to "Create New", new_genre_path %></p>
+
+<h2>Current Genres</h2>
+<% @genres.each do |genre| %>
+  <p><%= link_to genre.name, genre_path(genre) %></p>
+<% end %>
